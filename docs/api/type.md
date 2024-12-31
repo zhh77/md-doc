@@ -16,12 +16,12 @@
 |   date    |  baseType  | 日期类型，默认配置 `format: "YYYY-MM-DD"`                                              |
 |  boolean  |  baseType  | 布尔类型                                                                               |
 |  number   |  baseType  | 数字串类型                                                                             |
-|   array   |  baseType  | 数组串类型，默认配置 `format: "{0},{1}"`，需要额外配置itemType来设定项的类型            |
+|   array   |  baseType  | 数组串类型，默认配置 `format: "{0},{1}"`，需要额外配置itemType来设定项的类型           |
 |  object   |  baseType  | 对象类型， 注意如果是字符串进行转换，convertValue会进行json转换，formatValue会转成json |
-|  model   |  baseType  | 数据对象模型 |
-|  modelList   |  baseType  | 数据列表模型 |
+|   model   |  baseType  | 数据对象模型                                                                           |
+| modelList |  baseType  | 数据列表模型                                                                           |
 | datetime  | extendType | 日期时间，默认配置 `format: "YYYY-MM-DD HH:mm:ss"`                                     |
-| daterange | extendType | 范围，基础类型是array，默认配置 `format: "YYYY-MM-DD HH:mm:ss"`                                         |
+| dateRange | extendType | 范围，基础类型是array，默认配置 `format: "YYYY-MM-DD HH:mm:ss"`                        |
 |  integer  | extendType | 整数，默认配置 `decimal: 0`                                                            |
 |   enum    |  bizType   | 枚举                                                                                   |
 

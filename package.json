@@ -1,12 +1,13 @@
 {
   "name": "md-doc",
-  "version": "0.0.1",
-  "description": "A static site based on dumi",
+  "version": "0.0.2",
+  "description": "模型驱动文档库",
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",
     "build": "dumi build",
-    "prepare": "husky install && dumi setup"
+    "prepare": "husky install && dumi setup",
+    "deploy": "gh-pages -d dist"
   },
   "authors": [
     "zhh77_1999@163.com"
@@ -26,6 +27,7 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "dumi": "^2.2.16",
+    "gh-pages": "^6.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1"

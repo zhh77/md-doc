@@ -1,8 +1,9 @@
-# 模型简介
+# 模型文档
 
 ![alt text](../../public/model-base.png)
 
 ## 模型定义
+
 ```js
 import { MD } from "md-base";
 
@@ -84,8 +85,3 @@ const model = DataModel.create({
   ]
 });
 ```
-
-
-
-
-

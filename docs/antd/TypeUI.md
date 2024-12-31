@@ -1,7 +1,8 @@
 # TypeUI
+
 字段渲染的核心，默认会根据类型来找到对应的组件进渲染，类型名匹配dataType或者bizType，获取TypeUI的顺序 bizType -> dataType;
 
-注意view渲染，如果没必要不用特殊的配置，会直接用字段的formartValue来展示；
+注意view渲染，如果没必要不用特殊的配置，会直接用字段的formatValue来展示；
 
 ```js
 const TypeUI = {
@@ -59,8 +60,8 @@ const TypeUI = {
         props.allowClear = !field.required;
       },
     },
-    // 自定义的场景展示，可以在field.uiScene属性中设置
-    uiScene: {
+    // 展示模式，可以在field或者fieldset的uiMode属性中设置
+    uiMode: {
       // 横版排列
       hor(field) {
         let config = {

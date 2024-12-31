@@ -1,22 +1,22 @@
 # 准备工作
-模型驱动是是一套前端框架，也是一套将最佳实践，设计模型，开发流程融入的开发解决方案；通过它即可以实现开发提效，处理复杂的场景会更得心应手；
-具有快捷性，灵活性，扩展性集合一体特点，是一个下线低，上线高的方案。能针对不同水平的程序员都能发挥出对应的能力；
-`md并不会要求使用ts，因为模型本身具有非常清晰的结构，但不影响使用ts。更倾向使用js，更能发挥js语言快捷，后续会有md的一套开发提示工具；`
 
 ## 核心库介绍
-* md-base: 核心库，创建模型和管理各种配置configuration
-* md-ui-base: ui基础库，规范各种ui协议，无须直接使用
-* md-antd: 对接antd的ui库，将模型和对应的各种ui进行了结合，提供MDTable, MDForm, FieldRenderer, Operations等UI库；
-* md-mock: mock库，实现了DataAction(即数据服务)的mock能力，提供基础的CRUD以及干预数据的能力；
+
+- md-base: 核心库，创建模型和管理各种配置configuration
+- md-ui-base: ui基础库，规范各种ui协议，无须直接使用
+- md-antd: 对接antd的ui库，将模型和对应的各种ui进行了结合，提供MDTable, MDForm, FieldRenderer, Operations等UI库；
+- md-mock: mock库，实现了DataAction(即数据服务)的mock能力，提供基础的CRUD以及干预数据的能力；
 
 手动安装或者配置依赖；
 
 ## 安装库
+
 ```node
 
 ```
 
 ## 全局设置
+
 md是一个框架，内置了很多功能，但也有很多需要设置的地方，比如：数据请求，各种类型的转换，UI组件的属性控制；
 使用`mdConfig.js`进行配置；并需要在项目启动时引入；
 
@@ -89,11 +89,11 @@ UIService.setUIConfig({
   },
   Operations: {
     props(field, props) {
-      if(props.scene === 'table-row') {
+      if (props.scene === 'table-row') {
         props.align = 'left';
       }
-    }
-  }
+    },
+  },
 });
 
 const commonRequest = async (type, url, options) => {
@@ -147,6 +147,8 @@ Configuration.setup({
 ```
 
 之后就可以愉快的在项目中开发了。
-`注意md-base支持所有前端框架，但目前UI只沉淀的antd(4.24)的，所以在react+antd下开发最为能发挥其能力`
 
+## 注意事项
 
+- md-base支持所有前端框架，但目前UI只封装了antd(4.24)的，所以在react+antd下开发最为能发挥其能力
+- md没有提供ts版本，因为模型本身具有非常清晰的结构，但不影响使用ts。不过更倾向使用js，更能发挥js语言快捷，后续会有md的一套开发提示工具
